@@ -670,11 +670,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\repos\\hwapp\\hwapp.csproj",
+      "projectUniqueName": "c:\\repos\\hello-world\\hwapp\\hwapp.csproj",
       "projectName": "hwapp",
-      "projectPath": "c:\\repos\\hwapp\\hwapp.csproj",
+      "projectPath": "c:\\repos\\hello-world\\hwapp\\hwapp.csproj",
       "packagesPath": "C:\\Users\\Dave\\.nuget\\packages\\",
-      "outputPath": "c:\\repos\\hwapp\\obj\\",
+      "outputPath": "c:\\repos\\hello-world\\hwapp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
