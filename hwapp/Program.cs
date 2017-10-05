@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace hwapp
 {
@@ -65,7 +66,7 @@ namespace hwapp
 			{
 				Console.WriteLine("Good Night!");
 			}
-			*/
+
 			Console.WriteLine("Enter a number:");
 			int number = int.Parse(Console.ReadLine());
 			Console.Write("Factors: ");
@@ -87,6 +88,25 @@ namespace hwapp
 				}
 			}
 			Console.WriteLine();
+			*/
+			List<string> gifts = new List<string>();
+			Console.WriteLine("Dave's Gift List");
+			while (true)
+			{
+				Console.WriteLine("Enter command (+ item, - item, or -- to clear)):");
+				string listCommand = Console.ReadLine();
+				if (listCommand == "--")
+				{
+					gifts.Clear();
+					Console.WriteLine("Dave's Gift List has been cleared!  Awww shucks!");
+				}
+				if (listCommand.Substring(0,2) == "+ ")
+				{
+					string listAdd = listCommand.Substring(2);
+					gifts.Add(listAdd);
+					
+				}
+			}
 		}
     }
 }
