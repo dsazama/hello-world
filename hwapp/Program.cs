@@ -80,7 +80,7 @@ namespace hwapp
 						// divide number by the factor you found and assign this back to number
 						// print a comma if number is still greater than 1
 					}
-					// don't forget to increment factor!
+					candidateFactor++; // don't forget to increment factor!
 				}
 			}
 			Console.WriteLine();
