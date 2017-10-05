@@ -77,10 +77,13 @@ namespace hwapp
 					if (number % candidateFactor == 0) // found a factor
 					{
 						Console.Write(candidateFactor);
-						// divide number by the factor you found and assign this back to number
-						// print a comma if number is still greater than 1
+						number = number/candidateFactor; // divide number by the factor you found and assign this back to number
+						if (number > 1)
+						{
+							Console.Write(", "); // print a comma if number is still greater than 1
+						}
 					}
-					candidateFactor++; // don't forget to increment factor!
+					candidateFactor = candidateFactor +1;; // don't forget to increment factor!
 				}
 			}
 			Console.WriteLine();
