@@ -65,7 +65,7 @@ namespace hwapp
 			{
 				Console.WriteLine("Good Night!");
 			}
-			*/
+
 			Console.WriteLine("Enter a number:");
 			int number = int.Parse(Console.ReadLine());
 			Console.Write("Factors: ");
@@ -83,10 +83,26 @@ namespace hwapp
 							Console.Write(", "); // print a comma if number is still greater than 1
 						}
 					}
-					candidateFactor = candidateFactor +1;; // don't forget to increment factor!
+					candidateFactor++; // don't forget to increment factor!
 				}
 			}
 			Console.WriteLine();
+			*/
+			Console.WriteLine("Counting by 1, 2, 3, and 4 to 24!");
+			for (int outerLoop = 1; outerLoop <= 4; outerLoop++)
+			{
+				for (int innerLoop = 0; innerLoop <= 24/outerLoop; innerLoop++)
+				{
+					int commaCount = outerLoop * innerLoop;
+					string product = commaCount.ToString();
+					Console.Write(product);
+					if (commaCount < 24)
+					{
+						Console.Write(",");
+					}
+				}
+			Console.WriteLine();
+			}
 		}
     }
 }
