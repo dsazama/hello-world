@@ -664,7 +664,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Dave\\.nuget\\packages\\": {},
+    "C:\\Users\\dave.sazama\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -673,21 +673,19 @@
       "projectUniqueName": "C:\\repos\\hello-world\\hwapp\\hwapp.csproj",
       "projectName": "hwapp",
       "projectPath": "C:\\repos\\hello-world\\hwapp\\hwapp.csproj",
-      "packagesPath": "C:\\Users\\Dave\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\dave.sazama\\.nuget\\packages\\",
       "outputPath": "C:\\repos\\hello-world\\hwapp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Dave\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\dave.sazama\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
