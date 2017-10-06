@@ -104,7 +104,15 @@ namespace hwapp
 				{
 					string listAdd = listCommand.Substring(2);
 					gifts.Add(listAdd);
-					
+					Console.WriteLine("You have added an item to the list! Here is the new list:");
+					gifts.ForEach(Console.WriteLine);
+				}
+				if (listCommand.Substring(0,2) == "- ")
+				{
+					string listRemove = listCommand.Substring(2);
+					gifts.Remove(listRemove);
+					Console.WriteLine("You have removed an item from the list! Here is the new list:");
+					gifts.ForEach(Console.WriteLine);
 				}
 			}
 		}
