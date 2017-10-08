@@ -88,7 +88,7 @@ namespace hwapp
 				}
 			}
 			Console.WriteLine();
-			*/
+
 			List<string> gifts = new List<string>();
 			Console.WriteLine("Dave's Gift List");
 			while (true)
@@ -114,6 +114,43 @@ namespace hwapp
 					Console.WriteLine("You have removed an item from the list! Here is the new list:");
 					gifts.ForEach(Console.WriteLine);
 				}
+			}
+			var myList = new List<int>() { 2, 4, 6 };
+			int mySum = 0;
+			int myListIndex = 0;
+			int myListValue = 0;
+			Console.Write("Numbers: ");
+			while (myListIndex < myList.Count)
+			{
+				myListValue = myList[myListIndex];
+				Console.Write($"{myListValue} ");
+				mySum = mySum + myListValue;
+				myListIndex++;
+			}
+			Console.WriteLine();
+			Console.WriteLine($"Sum: {mySum}");
+			*/
+			
+			List<string> gifts = new List<string>();
+			Console.WriteLine("Dave's Gift List");
+
+			void ListClear()
+			{
+				gifts.Clear();
+				Console.WriteLine("Dave's Gift List has been cleared!");
+			}
+			
+			void ListAdd()
+			{
+				string listAdd = listCommand.Substring(2);
+				gifts.Add(listAdd);
+				Console.WriteLine("You have added an item to the list! Here is the new list:");
+				gifts.ForEach(Console.WriteLine);
+			}
+
+			while(true)
+			{
+
 			}
 		}
     }
