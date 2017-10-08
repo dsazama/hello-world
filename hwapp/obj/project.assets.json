@@ -664,23 +664,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\dave.sazama\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "/Users/dave/.nuget/packages/": {},
+    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\repos\\hello-world\\hwapp\\hwapp.csproj",
+      "projectUniqueName": "/Users/dave/repos/hello-world/hwapp/hwapp.csproj",
       "projectName": "hwapp",
-      "projectPath": "C:\\repos\\hello-world\\hwapp\\hwapp.csproj",
-      "packagesPath": "C:\\Users\\dave.sazama\\.nuget\\packages\\",
-      "outputPath": "C:\\repos\\hello-world\\hwapp\\obj\\",
+      "projectPath": "/Users/dave/repos/hello-world/hwapp/hwapp.csproj",
+      "packagesPath": "/Users/dave/.nuget/packages/",
+      "outputPath": "/Users/dave/repos/hello-world/hwapp/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\dave.sazama\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/Users/dave/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"

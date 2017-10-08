@@ -3,11 +3,39 @@ using System.Collections.Generic;
 
 namespace hwapp
 {
+	public class Address
+	{
+		public string StreetAddress { get; set; }
+		public string City { get; set; }
+		public string State { get; set; }
+		public string PostalCode { get; set; }
+		public string Country { get; set; }
+	}
+	public class Person
+	{
+		public string FirstName { get; set; }
+		public string LastName { get; set; }
+		public Address ShippingAddress { get; set; }
+	}
+	public class Company
+	{
+		public string Name { get; set; }
+		public Address ShippingAddress { get; set; }
+	}
+
+	class Program
+	{
+		static void Main(string[] args)
+		{
+			
+		}
+	}
+	/*
     class Program
     {
         static void Main(string[] args)
         {
-            /*var name = "Dave"; //This is my name
+            var name = "Dave"; //This is my name
 			string greeting = "Hola ";
 			Console.WriteLine(greeting + name + "!");
 			
@@ -129,7 +157,6 @@ namespace hwapp
 			}
 			Console.WriteLine();
 			Console.WriteLine($"Sum: {mySum}");
-			*/
 			
 			List<string> gifts = new List<string>();
 			Console.WriteLine("Dave's Gift List");
@@ -137,21 +164,47 @@ namespace hwapp
 			void ListClear()
 			{
 				gifts.Clear();
-				Console.WriteLine("Dave's Gift List has been cleared!");
+				Console.WriteLine("Dave's Gift List has been cleared! Aww Shucks!");
 			}
 			
-			void ListAdd()
+			string ListAdd(string listAdd)
 			{
-				string listAdd = listCommand.Substring(2);
 				gifts.Add(listAdd);
-				Console.WriteLine("You have added an item to the list! Here is the new list:");
+				return($"You have added {listAdd} to the list!");
+			}
+			string ListRemove(string listRemove)
+			{
+				gifts.Remove(listRemove);
+				return($"You have removed {listRemove} from the list!");
+			}
+			void ListShow()
+			{
+				Console.WriteLine("Here is the current gift list:");
 				gifts.ForEach(Console.WriteLine);
 			}
 
 			while(true)
 			{
-
+				Console.WriteLine("Enter command (+ item, - item, or -- to clear)):");
+				string listCommand = Console.ReadLine();
+				if (listCommand == "--")
+				{
+					ListClear();
+					ListShow();
+				}
+				if (listCommand.Substring(0,2) == "+ ")
+				{
+					string listAdd = listCommand.Substring(2);
+					Console.WriteLine(ListAdd(listAdd));
+					ListShow();
+				}
+				if (listCommand.Substring(0,2) == "- ")
+				{
+					string listRemove = listCommand.Substring(2);
+					Console.WriteLine(ListRemove(listRemove));
+					ListShow();
+				}
 			}
 		}
-    }
+    }*/
 }
