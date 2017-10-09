@@ -1,25 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.string;
 
 namespace hwapp
 {
-	public class Address
+    public class Address
 	{
-		public string StreetAddress { get; set; }
-		public string City { get; set; }
-		public string State { get; set; }
-		public string PostalCode { get; set; }
-		public string Country { get; set; }
+		public string StreetAddress { get; set; } = string.Empty;
+		public string City { get; set; } = string.Empty;
+		public string State { get; set; } = string.Empty;
+		public string PostalCode { get; set; } = string.Empty;
+		public string Country { get; set; } = string.Empty;
 	}
 	public class Person
 	{
-		public string FirstName { get; set; }
-		public string LastName { get; set; }
+		public string FirstName { get; set; } = string.Empty;
+		public string LastName { get; set; } = string.Empty;
 		public Address ShippingAddress { get; set; }
 	}
 	public class Company
 	{
-		public string Name { get; set; }
+		public string Name { get; set; } = string.Empty;
 		public Address ShippingAddress { get; set; }
 	}
 
@@ -27,7 +26,23 @@ namespace hwapp
 	{
 		static void Main(string[] args)
 		{
-			
+			List<Person> PersonList = new List<Person>();
+			PersonList.Add(new Person.FirstName("Dave"));
+			PersonList.Add(new Person.LastName("Sazama"));
+			PersonList.Add(new Person.ShippingAddress.StreetAddress("910 Gazell Trail"));
+			PersonList.Add(new Person.ShippingAddress.City("Winter Springs"));
+			PersonList.Add(new Person.ShippingAddress.State("FL"));
+			PersonList.Add(new Person.ShippingAddress.PostalCode("32708"));
+			PersonList.Add(new Person.ShippingAddress.Country("USA"));
+			foreach(Person entry in PersonList)
+			{
+				System.Console.WriteLine(entry.FirstName + " " + entry.LastName);
+				System.Console.WriteLine(entry.ShippingAddress.StreetAddress);
+				System.Console.WriteLine(entry.ShippingAddress.City);
+				System.Console.WriteLine(entry.ShippingAddress.State);
+				System.Console.WriteLine(entry.ShippingAddress.PostalCode);
+				System.Console.WriteLine(entry.ShippingAddress.Country);
+			}
 		}
 	}
 	/*
