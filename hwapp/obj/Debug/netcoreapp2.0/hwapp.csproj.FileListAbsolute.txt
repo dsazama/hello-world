@@ -8,16 +8,6 @@ C:/DotNetCore/hwapp/obj/Debug/netcoreapp2.0/hwapp.AssemblyInfoInputs.cache
 C:/DotNetCore/hwapp/obj/Debug/netcoreapp2.0/hwapp.AssemblyInfo.cs
 C:/DotNetCore/hwapp/obj/Debug/netcoreapp2.0/hwapp.dll
 C:/DotNetCore/hwapp/obj/Debug/netcoreapp2.0/hwapp.pdb
-C:/repos/hello-world/hwapp/bin/Debug/netcoreapp2.0/hwapp.deps.json
-C:/repos/hello-world/hwapp/bin/Debug/netcoreapp2.0/hwapp.runtimeconfig.json
-C:/repos/hello-world/hwapp/bin/Debug/netcoreapp2.0/hwapp.runtimeconfig.dev.json
-C:/repos/hello-world/hwapp/bin/Debug/netcoreapp2.0/hwapp.dll
-C:/repos/hello-world/hwapp/bin/Debug/netcoreapp2.0/hwapp.pdb
-C:/repos/hello-world/hwapp/obj/Debug/netcoreapp2.0/hwapp.csproj.CoreCompileInputs.cache
-C:/repos/hello-world/hwapp/obj/Debug/netcoreapp2.0/hwapp.AssemblyInfoInputs.cache
-C:/repos/hello-world/hwapp/obj/Debug/netcoreapp2.0/hwapp.AssemblyInfo.cs
-C:/repos/hello-world/hwapp/obj/Debug/netcoreapp2.0/hwapp.dll
-C:/repos/hello-world/hwapp/obj/Debug/netcoreapp2.0/hwapp.pdb
 /Users/dave/repos/hello-world/hwapp/bin/Debug/netcoreapp2.0/hwapp.deps.json
 /Users/dave/repos/hello-world/hwapp/bin/Debug/netcoreapp2.0/hwapp.runtimeconfig.json
 /Users/dave/repos/hello-world/hwapp/bin/Debug/netcoreapp2.0/hwapp.runtimeconfig.dev.json
@@ -33,3 +23,8 @@ c:\repos\hello-world\hwapp\obj\Debug\netcoreapp2.0\hwapp.AssemblyInfoInputs.cach
 c:\repos\hello-world\hwapp\obj\Debug\netcoreapp2.0\hwapp.AssemblyInfo.cs
 c:\repos\hello-world\hwapp\obj\Debug\netcoreapp2.0\hwapp.dll
 c:\repos\hello-world\hwapp\obj\Debug\netcoreapp2.0\hwapp.pdb
+C:\repos\hello-world\hwapp\bin\Debug\netcoreapp2.0\hwapp.deps.json
+C:\repos\hello-world\hwapp\bin\Debug\netcoreapp2.0\hwapp.runtimeconfig.json
+C:\repos\hello-world\hwapp\bin\Debug\netcoreapp2.0\hwapp.runtimeconfig.dev.json
+C:\repos\hello-world\hwapp\bin\Debug\netcoreapp2.0\hwapp.dll
+C:\repos\hello-world\hwapp\bin\Debug\netcoreapp2.0\hwapp.pdb

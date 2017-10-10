@@ -1,8 +1,8 @@
-﻿using System.string;
-
+﻿using System;
+using System.Collections.Generic;
 namespace hwapp
 {
-    public class Address
+    /*public class Address
 	{
 		public string StreetAddress { get; set; } = string.Empty;
 		public string City { get; set; } = string.Empty;
@@ -20,28 +20,36 @@ namespace hwapp
 	{
 		public string Name { get; set; } = string.Empty;
 		public Address ShippingAddress { get; set; }
+	}*/
+	class Person
+	{
+		public string name;
+		public Person(string s)
+		{
+			this.name = s;
+		}
 	}
 
 	class Program
 	{
 		static void Main(string[] args)
 		{
-			List<Person> PersonList = new List<Person>();
-			PersonList.Add(new Person.FirstName("Dave"));
-			PersonList.Add(new Person.LastName("Sazama"));
-			PersonList.Add(new Person.ShippingAddress.StreetAddress("910 Gazell Trail"));
-			PersonList.Add(new Person.ShippingAddress.City("Winter Springs"));
-			PersonList.Add(new Person.ShippingAddress.State("FL"));
-			PersonList.Add(new Person.ShippingAddress.PostalCode("32708"));
-			PersonList.Add(new Person.ShippingAddress.Country("USA"));
-			foreach(Person entry in PersonList)
+			List<Person> newPersonList = new List<Person>();
+			newPersonList.Add(new Person("Dave"));
+			// PersonList.Add(new Person.LastName("Sazama"));
+			// PersonList.Add(new listPerson.ShippingAddress.StreetAddress("910 Gazell Trail"));
+			// PersonList.Add(new listPerson.ShippingAddress.City("Winter Springs"));
+			// PersonList.Add(new listPerson.ShippingAddress.State("FL"));
+			// PersonList.Add(new listPerson.ShippingAddress.PostalCode("32708"));
+			// PersonList.Add(new listPerson.ShippingAddress.Country("USA"));
+			foreach(Person entry in newPersonList)
 			{
-				System.Console.WriteLine(entry.FirstName + " " + entry.LastName);
-				System.Console.WriteLine(entry.ShippingAddress.StreetAddress);
-				System.Console.WriteLine(entry.ShippingAddress.City);
-				System.Console.WriteLine(entry.ShippingAddress.State);
-				System.Console.WriteLine(entry.ShippingAddress.PostalCode);
-				System.Console.WriteLine(entry.ShippingAddress.Country);
+				System.Console.WriteLine(entry.name);
+				// System.Console.WriteLine(entry.ShippingAddress.StreetAddress);
+				// System.Console.WriteLine(entry.ShippingAddress.City);
+				// System.Console.WriteLine(entry.ShippingAddress.State);
+				// System.Console.WriteLine(entry.ShippingAddress.PostalCode);
+				// System.Console.WriteLine(entry.ShippingAddress.Country);
 			}
 		}
 	}
